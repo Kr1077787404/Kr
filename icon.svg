@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="emotion core">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2140"/>
+      <stop offset="1" stop-color="#5b3a6e"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8fb1"/>
+      <stop offset="0.5" stop-color="#ffd39b"/>
+      <stop offset="1" stop-color="#8fe3ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)"/>
+  <circle cx="64" cy="64" r="38" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
+  <path d="M22 70 C34 70 36 48 46 48 C56 48 56 84 66 84 C76 84 78 56 88 56 C98 56 100 70 106 70"
+        fill="none" stroke="url(#wave)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="30" r="3.5" fill="#ffd39b" fill-opacity="0.9"/>
+</svg>

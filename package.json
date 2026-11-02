@@ -1,0 +1,42 @@
+{
+  "name": "dsh-emotion-standalone",
+  "version": "0.1.0",
+  "description": "独立情绪插件：PAD 三维 + OCC/SEC 评价 + 多情绪混合 + 半衰期；不依赖记忆网，不写 persona。",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "emotion",
+    "mood",
+    "pad",
+    "occ"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./lib/emotion.mjs": "./lib/emotion.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "scripts": {
+    "test": "node --test test/emotion.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

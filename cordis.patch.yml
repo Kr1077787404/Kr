@@ -1,0 +1,14 @@
+# ============================================================================
+# dsh-emotion-standalone —— 独立情绪插件（Host-only）
+#
+# 装法（DSH 插件管理）：
+#   plugin_manager({ action: "install_bundle", target: "<这个目录的绝对路径>" })
+# 装完重启 DSH，然后让 agent 调 emotion_status / emotion_feel 验证。
+#
+# 它只读写 <dir>/emotion.json；不碰 memory-net、不碰 persona.json。
+# 默认 dir = $DSH_HOME/emotion-standalone（可用 DSH_EMOTION_DIR 覆盖）。
+# ============================================================================
+
+- insert:
+    - id: emotion-standalone
+      name: 'dsh-emotion-standalone'
